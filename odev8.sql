@@ -50,7 +50,7 @@ UPDATE employee SET name = 'sinasi',	email = 'sinasiveguzellemeleri@gmail.com',	
 
 UPDATE employee SET name = 'melih cevdet, email = 'melihcevdet@gmail.com',birthday = '1984-02-11' WHERE name = 'melih';
 
-UPDATE employee SET name = 'niyazili',	email = 'niyazilli@gmail.com',	birthday = '1987-01-12' WHERE name = '%yazi';
+UPDATE employee SET name = 'niyazili',	email = 'niyazilli@gmail.com',	birthday = '1987-09-18' WHERE name = '%zi';
 
 UPDATE employee SET name = 'deneme',	email = '@gmail.com',	birthday = '1995-02-03' WHERE email LIKE 'a%';
 
@@ -59,9 +59,9 @@ UPDATE employee SET name = 'xxxx', 	email = 'xxxx@gmail.com',	birthday = '1990-1
 --Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 DELETE FROM employee WHERE id=5;
 
-DELETE FROM employee WHERE name ILIKE 'hal%';
+DELETE FROM employee WHERE name LIKE 'hal%';
 
-DELETE FROM employee WHERE email ILIKE '%e%mal%';
+DELETE FROM employee WHERE email LIKE '%e%mal%';
 
 DELETE FROM employee WHERE birthday >= '2000-01-01';
 
